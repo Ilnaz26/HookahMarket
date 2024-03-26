@@ -1,7 +1,31 @@
 <?php require_once 'header.php'; ?>
 <div class="container">
-	<section>
-		<img src="img/main.png">
+	<section class="main">
+		<div>
+			<div class="main_sect">
+				<div class="main_container">
+					<a href="#" class="btn aksiya_promocode_btn" promocode="HOOKAHMARKET">Скопировать промокод</a>
+					<div class="main_text">по промокоду</div>
+					<div class="main_promocode">HOOKAHMARKET</div>
+					<div class="main_desc">На доставку или покупку в магазине по адресу г. Минск, улица Кальварийская 24</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div>
+		<div class="podbor_sect">
+			<div class="podbor_text_block">
+				<h2 class="podbor_title">Подберем кальян <br>под твой запрос <br>и бюджет</h2>
+				<div class="podbor_text">Ответь на 7 вопросов:
+					<span>и мы исходя из твоих предпочтений пришлем тебе <br>в мессенджер несколько вариантов на выбор</span>
+				</div>
+
+				<a href="/quiz/" class="btn podbor_btn">Получить подборку кальянов</a>
+			</div>
+		</div>
+		</div>
+		
 	</section>
 
 	<section>

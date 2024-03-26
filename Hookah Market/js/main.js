@@ -1,5 +1,15 @@
 (function($){
 	var width = $(document).width();
+
+
+	//Слайдер на главной странице
+	$('.main').slick({
+		infinite: false,
+		dots: true,
+		dotsClass: 'slick-dots',
+		arrows: false,
+		adaptiveHeight: true,
+	});
 	//Скрыть информацию в шапке
 	$('.close_info_btn').click(function(){
 		$('.header_info').hide();
@@ -488,9 +498,28 @@
 		$.fancybox.close();
 	});
 
-	//Меню в мобилке
-	// let width = $(document).width();
-	// if(width <= 767){
-	// 	$('.header_btn_link').click(function())
-	// }
+	//Копируем промокод в буфер обмена
+	$('.aksiya_promocode_btn').click(function(e){
+		e.preventDefault();
+		var $tmp = $("<textarea>");
+    $("body").append($tmp);
+    $tmp.val($(this).attr('promocode')).select();
+    document.execCommand("copy");
+    $tmp.remove();
+	});
+
+	//Вопросы и ответы
+	$('.question_btn').click(function(){
+		let parent = $(this).parent();
+		parent.toggleClass('active');
+		parent.next().slideToggle();
+	});
+
+	//Табы на странице оптовикам
+	$('.opt_category_item').click(function(){
+		$('.opt_category_item').removeClass('active');
+		$(this).addClass('active');
+		$('.opt_list.active').removeClass('active');
+		$('#' + $(this).attr('tab')).addClass('active');
+	});
 })( jQuery );
