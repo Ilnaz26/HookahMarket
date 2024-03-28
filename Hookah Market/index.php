@@ -214,7 +214,11 @@
 				<div class="post_item_text">Лучшие кальяны с подробным <br>описанием от HOOKAHMARKET</div>
 				<img src="img/post1.png" class="post_item_foto">
 				<a href="#" class="post_item_link">
-					<img src="img/strelka.svg">
+				<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" fill="#222"/>
+					<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#fff"/>
+					<path d="M17.3935 40.6066C17.3935 41.7112 18.2889 42.6066 19.3935 42.6066L37.3935 42.6066C38.4981 42.6066 39.3935 41.7112 39.3935 40.6066C39.3935 39.502 38.4981 38.6066 37.3935 38.6066L21.3935 38.6066L21.3935 22.6066C21.3935 21.502 20.4981 20.6066 19.3935 20.6066C18.2889 20.6066 17.3935 21.502 17.3935 22.6066L17.3935 40.6066ZM39.1925 17.9792L17.9793 39.1924L20.8077 42.0208L42.0209 20.8076L39.1925 17.9792Z" fill="#fff"/>
+				</svg>
 				</a>
 			</div>
 
@@ -223,21 +227,32 @@
 				<div class="post_item_text">Спроектированный топ миксов от HOOKAHMARKET</div>
 				<img src="img/post2.png" class="post_item_foto">
 				<a href="#" class="post_item_link">
-					<img src="img/strelka_white.svg">
+				<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="white"/>
+					<path d="M42.6065 19.3934C42.6065 18.2888 41.7111 17.3934 40.6065 17.3934L22.6065 17.3934C21.5019 17.3934 20.6065 18.2888 20.6065 19.3934C20.6065 20.498 21.5019 21.3934 22.6065 21.3934L38.6065 21.3934L38.6065 37.3934C38.6065 38.498 39.5019 39.3934 40.6065 39.3934C41.7111 39.3934 42.6065 38.498 42.6065 37.3934L42.6065 19.3934ZM20.8075 42.0208L42.0207 20.8076L39.1923 17.9792L17.9791 39.1924L20.8075 42.0208Z" fill="white"/>
+				</svg>
 				</a>
 				<img src="img/post2_icon.svg" class="post2_icon">
 			</div>
 
 			<div class="post_item post3">
 				<h3 class="post_item_title">Памятка для новичка</h3>
-				<img src="img/post3_icon.png">
+				<a href="#" class="post_item_link">
+				<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="white"/>
+					<path d="M42.6065 19.3934C42.6065 18.2888 41.7111 17.3934 40.6065 17.3934L22.6065 17.3934C21.5019 17.3934 20.6065 18.2888 20.6065 19.3934C20.6065 20.498 21.5019 21.3934 22.6065 21.3934L38.6065 21.3934L38.6065 37.3934C38.6065 38.498 39.5019 39.3934 40.6065 39.3934C41.7111 39.3934 42.6065 38.498 42.6065 37.3934L42.6065 19.3934ZM20.8075 42.0208L42.0207 20.8076L39.1923 17.9792L17.9791 39.1924L20.8075 42.0208Z" fill="#222"/>
+				</svg>
+				</a>
 			</div>
 
 			<div class="post_item post4">
 				<h3 class="post_item_title">Как правильно забить чашу для дымного кальяна</h3>
 				<img src="img/post4.png" class="post_item_foto">
 				<a href="#" class="post_item_link">
-					<img src="img/strelka_white.svg">
+				<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="white"/>
+					<path d="M42.6065 19.3934C42.6065 18.2888 41.7111 17.3934 40.6065 17.3934L22.6065 17.3934C21.5019 17.3934 20.6065 18.2888 20.6065 19.3934C20.6065 20.498 21.5019 21.3934 22.6065 21.3934L38.6065 21.3934L38.6065 37.3934C38.6065 38.498 39.5019 39.3934 40.6065 39.3934C41.7111 39.3934 42.6065 38.498 42.6065 37.3934L42.6065 19.3934ZM20.8075 42.0208L42.0207 20.8076L39.1923 17.9792L17.9791 39.1924L20.8075 42.0208Z" fill="white"/>
+				</svg>
 				</a>
 			</div>
 		</div>

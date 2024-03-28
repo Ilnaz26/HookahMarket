@@ -541,12 +541,19 @@ form .form-row:first-child{
 }
 .category_item{
 	position: relative;
+	overflow: hidden;
+	border-radius: 45px;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	-ms-border-radius: 45px;
+	-o-border-radius: 45px;
 }
 .category__title {
 	font-weight: 500;
 	font-size: 26px;
 	color: #222;
 	position: absolute;
+	z-index: 1;
 	top: 20px;
 	left: 25px;
 }
@@ -556,6 +563,23 @@ form .form-row:first-child{
 	-moz-border-radius: 45px;
 	-ms-border-radius: 45px;
 	-o-border-radius: 45px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.category_item img:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
 }
 /* home products */
 .offer_btn {
@@ -875,8 +899,22 @@ form .form-row:first-child{
 }
 a.post_item_link {
 	position: absolute;
+	z-index: 1;
 	right: 20px;
 	bottom: 20px;
+}
+.post_item_link rect, .post_item_link path, .post_item_link:hover rect, .post_item_link:hover path{
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.post_item_link:hover rect{
+	fill: #fff;
+}
+.post_item_link:hover path{
+	fill: #222;
 }
 .post2_icon {
 	position: absolute;
@@ -2349,6 +2387,26 @@ input#product_count {
 }
 .we_item {
 	position: relative;
+	overflow: hidden;
+	border-radius: 45px;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	-ms-border-radius: 45px;
+	-o-border-radius: 45px;
+}
+.we_item>img, .we_item:hover>img{
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.we_item:hover>img{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 .we_text {
 	position: absolute;
@@ -2822,7 +2880,7 @@ input#product_count {
 	.post_item .post_item_title {
     font-size: 30px;
 	}
-	.post_item_link img, .post3 img {
+	.post_item_link svg, .post3 svg {
     width: 50px;
     aspect-ratio: 1;
 		object-fit: contain;
