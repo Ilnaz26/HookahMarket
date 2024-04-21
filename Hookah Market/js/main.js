@@ -326,6 +326,12 @@
 		$('#' + $(this).attr('tab')).show();
 	});
 
+	$(".delivery_item input[type='checkbox']").each(function(){
+		if($(this).is(':checked')){
+			$(this).parents('.delivery_item').addClass('active').trigger('click');
+		}
+	});
+
 	//Переключения метода оплаты
 	$('.pay_item').click(function(){
 		$('.pay_item').removeClass('active');
@@ -333,6 +339,12 @@
 
 		$(".pay_item input[type='checkbox']").prop('checked', false);
 		$(this).find("input[type='checkbox']").prop('checked', true);
+	});
+
+	$(".pay_item input[type='checkbox']").each(function(){
+		if($(this).is(':checked')){
+			$(this).parents('.pay_item').addClass('active').trigger('click');
+		}
 	});
 
 	//Добавление клиента
@@ -347,11 +359,12 @@
 			<div class='client_info_content'>
 				<h3 class='client_name'>${client_name}<img src='/img/edit.svg' class='client_edit'></h3>
 				<div class='client_info_desc'>${client_tel}</div>
-				<input type='hidden' name='client_name' value='${client_name}'/>
-				<input type='hidden' name='client_tel' value='${client_tel}'/>
-				<input type='hidden' name='client_email' value='${client_email}'/>
 			</div>
-		</a>`);
+		</a>`
+		);
+		$("input[name='client_name']").val(client_name);
+		$("input[name='client_tel']").val(client_tel);
+		$("input[name='client_email']").val(client_email);
 
 		$('.client_info_list').append(`<a data-fancybox href='#client_info_add' class='client_info_item cii_other_add'>
 			<div class='client_foto'><img src='/img/client_add.svg' alt='Иконка'></div>
@@ -374,9 +387,9 @@
 	});
 
 	$('.client_info_list').on('click','.cii_edit',function(){
-		let client_name = $(".cii_edit input[name='client_name']").val();
-		let client_tel = $(".cii_edit input[name='client_tel']").val();
-		let client_email = $(".cii_edit input[name='client_email']").val();
+		let client_name = $("input[name='client_name']").val();
+		let client_tel = $("input[name='client_tel']").val();
+		let client_email = $("input[name='client_email']").val();
 		$('#client_info_name').val(client_name);
 		$('#client_info_tel').val(client_tel);
 		$('#client_info_email').val(client_email);
@@ -401,13 +414,13 @@
 				<div class="pickup_content">
 					<div class="pickup_title">${address}</div>
 				</div>
-				<input type='hidden' name='order_address' value='${address}'/>
-				<input type='hidden' name='order_entrance' value='${entrance}'/>
-				<input type='hidden' name='order_flat' value='${flat}'/>
-				<input type='hidden' name='order_floor' value='${floor}'/>
-				<input type='hidden' name='order_doorphone' value='${doorphone}'/>
-				<input type='hidden' name='order_comment' value='${comment}'/>
 		</a>`);
+		$("input[name='order_address']").val(address);
+		$("input[name='order_entrance']").val(entrance);
+		$("input[name='order_flat']").val(flat);
+		$("input[name='order_floor']").val(floor);
+		$("input[name='order_doorphone']").val(doorphone);
+		$("input[name='order_comment']").val(comment);
 
 		$('.client_address_list').append(`
 			<a data-fancybox="" href="#client_address_add" class="pickup_address client_address client_address_other_add">
@@ -436,12 +449,12 @@
 	});
 
 	$('.client_address_list').on('click','.client_address_edit',function(){
-		let address = $(".client_address_edit input[name='order_address']").val();
-		let entrance = $(".client_address_edit input[name='order_entrance']").val();
-		let flat = $(".client_address_edit input[name='order_flat']").val();
-		let floor = $(".client_address_edit input[name='order_floor']").val();
-		let doorphone = $(".client_address_edit input[name='order_doorphone']").val();
-		let comment = $(".client_address_edit input[name='order_comment']").val();
+		let address = $("input[name='order_address']").val();
+		let entrance = $("input[name='order_entrance']").val();
+		let flat = $("input[name='order_flat']").val();
+		let floor = $("input[name='order_floor']").val();
+		let doorphone = $("input[name='order_doorphone']").val();
+		let comment = $("input[name='order_comment']").val();
 
 		$('#client_address').val(address);
 		$('#client_entrance').val(entrance);

@@ -453,3 +453,13 @@ input[type="reset"] {
 .checkbox-ios.focused .checkbox-ios-switch:before {
 	box-shadow: inset 0px 0px 4px #EC2626;
 }
+
+.d-none{
+	display: none!important;
+}
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
